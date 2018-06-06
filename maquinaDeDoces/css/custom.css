@@ -1,0 +1,9 @@
+body {
+	padding-top: 30px;
+	padding-bottom: 70px;
+	background-color: pink;
+}
+
+p,h2,h3,h4{
+	color: white;
+}
