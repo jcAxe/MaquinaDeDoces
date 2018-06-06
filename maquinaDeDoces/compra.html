@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Keryar's gamming blog</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+
+
+
+  </head>
+  <body>
+  	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Máquina de Doces</h1>
+			
+		</div>
+		
+
+       
+		<div id="moedas" class="form-group has-feedback " >
+                            <label class="" style="padding-top: 40px"; style=" padding-left: 0px" ;">Quanto de cada moeda você utilizará no pagamento?</label>
+                            <div class="">
+                                <label class="control-label" style="padding-top: 0px;">
+                                   <input id="moeda100" type="number" value="0"/>&nbsp;R$1,00
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="control-label" style="padding-top: 0px;">
+
+                                    <input id="moeda050" type="number" value="0"/>&nbsp;R$0,50
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="control-label" style="padding-top: 0px;">
+                                    <input id="moeda025" type="number" value="0"/>&nbsp;R$0,25
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="control-label" style="padding-top: 0px;">
+                                    <input id="moeda010" type="number" value="0"/>&nbsp;R$0,10
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="control-label" style="padding-top: 0px;">
+                                    <input id="moeda005" type="number" value="0"/>&nbsp;R$0,05
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="control-label" style="padding-top: 0px;">
+                                    <input id="moeda001" type="number" value="0"/>&nbsp;R$0,01
+                                </label>
+                            </div>
+
+        </div>
+		
+        <div>
+            
+            <p>Valor total: $<span id="cost">R$0,00</span></p>
+
+        </div>
+
+        <div id="selectOneFuncionario" class="form-group has-feedback">
+                            <label class="col-sm-1 control-label" style="padding-left: 0px"  ;" for="selectOne">Atendente:</label>
+                            <div class="col-sm-3" style="padding-left: 5px">
+                                <select id="selectOne" name="umaOpcao" class="form-control input-sm">
+                                    <option value=""> Selecione uma opção</option>
+                                    <option value="1"> João Peralta</option>
+                                    <option value="2"> Maria Lyralei </option>
+                                    <option value="3"> Ítalo Makunouchi</option>
+                                    <option value="4"> Joana Ochaco</option>
+                                </select>
+                            </div>
+                            
+        </div>
+
+		<div class="col-sm-1 control-label" style="padding-top : 0px" >
+
+			<a href="#" class="btn btn-success">Concluir compra</a>
+
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
+
+  </body>
+</html>
