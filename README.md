@@ -22,4 +22,4 @@ Uma tela de exibição das vendas dos últimos 5 dias deve ser construída, junt
 
 É desejável que você utilize Angular (escolha a versão de sua preferência) para realizar a tarefa mas pode considerar outras bibliotecas, ou core JavaScript.
 
-É desejável que você disponibilize uma interface REST para o seu backend e consuma pelo frontend.
+É desejável que você disponibilize uma interface REST para o seu backend e consuma pelo frontend.0
