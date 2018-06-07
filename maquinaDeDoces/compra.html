@@ -23,54 +23,68 @@
 		</div>
 		
 
-       
-		<div id="moedas" class="form-group has-feedback " >
-                            <label class="" style="padding-top: 40px"; style=" padding-left: 0px" ;">Quanto de cada moeda você utilizará no pagamento?</label>
-                            <div class="">
-                                <label class="" style="">
-                                   <input id="moeda100" type="number" value="0" min="0"/>&nbsp;R$1,00
-                                </label>
-                            </div>
-                            <div class="">
-                                <label class="" style="">
+        <div id= "areaPagamento" class="col-md-6">
+            <div>
+                Valor da compra: R$ <input id="valorDoces" type="text" value="15" min="0" readonly />&nbsp;
+            </div>
 
-                                    <input id="moeda050" type="number" value="0" min="0"/>&nbsp;R$0,50
-                                </label>
-                            </div>
-                            <div class="">
-                                <label class="" style="">
-                                    <input id="moeda025" type="number" value="0" min="0"/>&nbsp;R$0,25
-                                </label>
-                            </div>
-                            <div class="">
-                                <label class="" style=";">
-                                    <input id="moeda010" type="number" value="0" min="0"/>&nbsp;R$0,10
-                                </label>
-                            </div>
-                            <div class="">
-                                <label class="" style="">
-                                    <input id="moeda005" type="number" value="0" min="0"/>&nbsp;R$0,05
-                                </label>
-                            </div>
-                            <div class="">
-                                <label class="" style="">
-                                    <input id="moeda001" type="number" value="0" min="0"/>&nbsp;R$0,01
-                                </label>
-                            </div>
+                <div id="moedas" class="form-group has-feedback " >
+                    <h3>Pagamento</h3>
+                        <label class="" style=""; style="">Quanto de cada moeda você utilizará no pagamento?</label>
+                        <div class="">
+                            <label class="" style="">
+                               <input id="pgMoeda100" type="number" value="0" min="0"/>&nbsp;R$1,00
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="" style="">
 
-        </div>
-		
-        <div>
+                                <input id="pgMoeda050" type="number" value="0" min="0"/>&nbsp;R$0,50
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="" style="">
+                                <input id="pgMoeda025" type="number" value="0" min="0"/>&nbsp;R$0,25
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="" style=";">
+                                <input id="pgMoeda010" type="number" value="0" min="0"/>&nbsp;R$0,10
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="" style="">
+                                <input id="pgMoeda005" type="number" value="0" min="0"/>&nbsp;R$0,05
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="" style="">
+                                <input id="pgMoeda001" type="number" value="0" min="0"/>&nbsp;R$0,01
+                            </label>
+                        </div>
+                </div>
+
+            <div>
+
+                
+                <p>Valor do pagamento: R$<input id="pagamento" name = "value" type="text"  value="0" min="0" readonly />
+
+            </div>
+
+            <div>
+                <a href="#" id="btnResetPagamento" class="btn btn-success">Zerar moedas</a>
+            </div>
+		</div>
+        
+
+        <div id="areaTroco" class="col-md-6">
             
-            <p>Valor do pagamento: R$<input id="pagamento" name = "value" type="text"  value="0" min="0" readonly />
-
-        </div>
-
-        <div id="selectOneFuncionario" class="form-group has-feedback">
-                            <label class="col-sm-1 control-label" style="padding-left: 0px"  ;" for="selectOne">Atendente:</label>
-                            <div class="col-sm-3" style="padding-left: 5px">
+            <h3>Troco</h3>
+                <div id="selectOneFuncionario" class="form-group has-feedback">
+                            <label class="" style="" for="selectOne">Atendente:</label>
+                            <div class="" style="padding-left: 5px">
                                 <select id="selectOne" name="umaOpcao" class="form-control input-sm">
-                                    <option value=""> Selecione uma opção</option>
+                                    <option value="0"> Selecione uma opção</option>
                                     <option value="1"> João Peralta</option>
                                     <option value="2"> Maria Lyralei </option>
                                     <option value="3"> Ítalo Makunouchi</option>
@@ -78,13 +92,54 @@
                                 </select>
                             </div>
                             
+                </div>
+            
+        <div>
+                            <label class="" style=""; style="">Você receberá em troco:</label>
+                            <div class="">
+                                <label class="" style="">
+                                   <input id="trocoMoeda100" name = "valueM100" type="text"  value="0" readonly />&nbsp;Moedas de R$1,00
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="" style="">
+
+                                    <input id="trocoMoeda050" name = "valueM050" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,50
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="" style="">
+                                    <input id="trocoMoeda025" name = "valueM025" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,25
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="" style=";">
+                                    <input id="trocoMoeda010" name = "valueM010" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,10
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="" style="">
+                                    <input id="trocoMoeda005" name = "valueM005" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,05
+                                </label>
+                            </div>
+                            <div class="">
+                                <label class="" style="">
+                                    <input id="trocoMoeda001" name = "valueM001" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,01
+                                </label>
+                            </div>
+
         </div>
 
-		<div class="col-sm-1 control-label" style="padding-top : 0px" >
+        </div>
 
-			<a href="#" class="btn btn-success">Concluir compra</a>
+        
 
-		</div>
+
+		<div class="col-sm-1 control-label" style="" >
+
+            <button id="btnConcluiCompra" type="button" class="btn btn-primary" >Concluir compra</a>
+
+        </div>
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
