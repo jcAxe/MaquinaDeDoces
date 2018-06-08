@@ -88,6 +88,15 @@ $("#btnConcluiCompra").on("click", function(e) {
 
   }else{
     calculaTroco(pagamento,valorDoces);
+    var currentdate = new Date(); 
+    var datetime = "Compra realizada em: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " às "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+
+    alert(datetime);
 
   }
   
