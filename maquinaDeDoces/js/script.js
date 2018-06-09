@@ -135,3 +135,4 @@ function calculaTroco(valPagamento, valDoces) {
     document.getElementById('trocoMoeda001').value=moedasDe001; 
            
 }
+
