@@ -80,14 +80,14 @@ $("#btnResetPagamento").on("click", function(e) {
 });
 
 $("#btnConcluiCompra").on("click", function(e) {
-  var valorDoces = document.getElementById('valorDoces').value;
-  var pagamento = document.getElementById('pagamento').value;
+  var valorCompra = document.getElementById('valorDoces').value;
+  var valorPago = document.getElementById('pagamento').value;
 
-  if(parseFloat(pagamento).toFixed(2) < parseFloat(valorDoces).toFixed(2)){
+  if(parseFloat(valorPago).toFixed(2) < parseFloat(valorCompra).toFixed(2)){
     alert("Valor insuficiente");
 
   }else{
-    calculaTroco(pagamento,valorDoces);
+    var troco = calculaTroco(valorPago,valorCompra);
     var currentdate = new Date(); 
     var datetime = "Compra realizada em: " + currentdate.getDate() + "/"
                 + (currentdate.getMonth()+1)  + "/" 
@@ -95,6 +95,12 @@ $("#btnConcluiCompra").on("click", function(e) {
                 + currentdate.getHours() + ":"  
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
+    var dia = currentdate.getDate();
+    var mes = currentdate.getMonth()+1;
+    var ano = currentdate.getFullYear();
+    var cliente = document.getElementById('nomeCliente').value;
+    var atendente = document.getElementById('selectOne').value;
+    criarVendaJSON(dia, mes, ano, cliente, valorCompra, valorPago, troco, atendente);
 
     alert(datetime);
 
@@ -102,9 +108,9 @@ $("#btnConcluiCompra").on("click", function(e) {
   
 });
 
-function calculaTroco(valPagamento, valDoces) {
+function calculaTroco(valorPago, valorCompra) {
     //Remover as casas decimais
-    var trocoTotal = 100*((valPagamento - valDoces).toFixed(2));
+    var trocoTotal = 100*((valorPago - valorCompra).toFixed(2));
 
     //Variável criada apenas para facilitar a leitura, virtualmente desnecessária
     var trocoRestante = trocoTotal;
@@ -133,6 +139,23 @@ function calculaTroco(valPagamento, valDoces) {
     document.getElementById('trocoMoeda010').value=moedasDe010; 
     document.getElementById('trocoMoeda005').value=moedasDe005; 
     document.getElementById('trocoMoeda001').value=moedasDe001; 
+    return (valorPago - valorCompra).toFixed(2);
            
-}
+};
 
+function criarVendaJSON(vDia, vMes, vAno, vCliente, vValorCompra, vValorPago, vTroco, vAtendente){
+
+var venda = {
+  dia:vDia,
+  mes:vMes,
+  ano:vAno,
+  cliente:vCliente,
+  valorCompra:vValorCompra,
+  valorPago:vValorPago,
+  troco:vTroco,
+  atendente: vAtendente
+};
+
+alert(venda.dia);
+
+};
