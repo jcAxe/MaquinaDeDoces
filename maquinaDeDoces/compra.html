@@ -46,7 +46,7 @@
 
         <div id= "areaPagamento" class="col-md-6">
             <div>
-                Valor da compra: R$ <input id="valorDoces" type="text" value="0" min="0" readonly />&nbsp;
+                Valor da compra: R$ <input id="valorDoces" class="valorBox" type="text" value="0" min="0" readonly />&nbsp;
             </div>
 
                 <div id="moedas" class="form-group has-feedback " >
@@ -54,33 +54,33 @@
                         <label class="" style=""; style="">Quanto de cada moeda você utilizará no pagamento?</label>
                         <div class="">
                             <label class="" style="">
-                               <input id="pgMoeda100" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$1,00
+                               <input id="pgMoeda100" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$1,00
                             </label>
                         </div>
                         <div class="">
                             <label class="" style="">
 
-                                <input id="pgMoeda050" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,50
+                                <input id="pgMoeda050" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,50
                             </label>
                         </div>
                         <div class="">
                             <label class="" style="">
-                                <input id="pgMoeda025" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,25
+                                <input id="pgMoeda025" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,25
                             </label>
                         </div>
                         <div class="">
                             <label class="" style=";">
-                                <input id="pgMoeda010" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,10
+                                <input id="pgMoeda010" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,10
                             </label>
                         </div>
                         <div class="">
                             <label class="" style="">
-                                <input id="pgMoeda005" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,05
+                                <input id="pgMoeda005" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,05
                             </label>
                         </div>
                         <div class="">
                             <label class="" style="">
-                                <input id="pgMoeda001" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,01
+                                <input id="pgMoeda001" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>&nbsp;R$0,01
                             </label>
                         </div>
                 </div>
@@ -90,7 +90,7 @@
             <div>
 
                 
-                <p>Valor do pagamento: R$<input id="pagamento" name = "value" type="text"  value="0" min="0" readonly />
+                <p>Valor do pagamento: R$<input id="pagamento" class="valorBox" name = "value" type="text"  value="0" min="0" readonly />
 
             </div>
 
@@ -107,8 +107,7 @@
 
         <div id="areaTroco" class="col-md-6">
             
-            <h3>Troco</h3>
-                <div id="selectOneHasError" class="form-group has-feedback">
+            <div id="selectOneHasError" class="form-group has-feedback">
                             <label class="" style="" for="selectOne">Atendente:</label>
                             <div class="" style="padding-left: 5px">
                                 <select id="selectOne" name="umaOpcao" class="form-control input-sm">
@@ -120,39 +119,42 @@
                                 </select>
                             </div>
                             
-                </div>
+            </div>
+
+            <h3>Troco</h3>
+                
             
         <div>
                             <label class="" style=""; style="">Você receberá em troco:</label>
                             <div class="">
                                 <label class="" style="">
-                                   <input id="trocoMoeda100" name = "valueM100" type="text"  value="0" readonly />&nbsp;Moedas de R$1,00
+                                   <input id="trocoMoeda100"  class="qtdBox" name = "valueM100" type="text"  value="0" readonly />&nbsp;Moedas de R$1,00
                                 </label>
                             </div>
                             <div class="">
                                 <label class="" style="">
 
-                                    <input id="trocoMoeda050" name = "valueM050" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,50
+                                    <input id="trocoMoeda050"  class="qtdBox" name = "valueM050" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,50
                                 </label>
                             </div>
                             <div class="">
                                 <label class="" style="">
-                                    <input id="trocoMoeda025" name = "valueM025" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,25
+                                    <input id="trocoMoeda025"  class="qtdBox" name = "valueM025" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,25
                                 </label>
                             </div>
                             <div class="">
                                 <label class="" style=";">
-                                    <input id="trocoMoeda010" name = "valueM010" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,10
+                                    <input id="trocoMoeda010"  class="qtdBox" name = "valueM010" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,10
                                 </label>
                             </div>
                             <div class="">
                                 <label class="" style="">
-                                    <input id="trocoMoeda005" name = "valueM005" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,05
+                                    <input id="trocoMoeda005"  class="qtdBox" name = "valueM005" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,05
                                 </label>
                             </div>
                             <div class="">
                                 <label class="" style="">
-                                    <input id="trocoMoeda001" name = "valueM001" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,01
+                                    <input id="trocoMoeda001"  class="qtdBox" name = "valueM001" type="text"  value="0" readonly/>&nbsp;Moedas de R$0,01
                                 </label>
                             </div>
 

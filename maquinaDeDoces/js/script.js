@@ -119,8 +119,8 @@ $("#btnConcluiCompra").on("click", function(e) {
     var cliente = document.getElementById('nomeCliente').value;
     var atendente = document.getElementById('selectOne').value;
     criarVendaJSON(dia, mes, ano, cliente, valorCompra, valorPago, troco, atendente);
-    window.location.href='vendasRecentes.html';
-
+    //window.location.href='vendasRecentes.html';
+    alert("Compra bem sucedida!");
   }
   
 });
