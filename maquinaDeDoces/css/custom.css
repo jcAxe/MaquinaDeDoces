@@ -38,6 +38,9 @@ width: 200px;
 
 }
 
+.has-error{
+	color: #8B0000;
+}
 
 .button.cyan {
   background: #2eabb3;

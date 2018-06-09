@@ -79,14 +79,32 @@ $("#btnResetPagamento").on("click", function(e) {
 
 });
 
+
+//variaveis globaris para verificar o estado das caixas de entrada
+var checkCliente = false;
+var checkSelctOne = false;
+
+
 $("#btnConcluiCompra").on("click", function(e) {
   var valorCompra = document.getElementById('valorDoces').value;
   var valorPago = document.getElementById('pagamento').value;
 
+
   if(parseFloat(valorPago).toFixed(2) < parseFloat(valorCompra).toFixed(2)){
     alert("Valor insuficiente");
 
-  }else{
+  }
+  else if($('#nomeCliente').val() === ''){
+        $('#clienteHasError').addClass("has-error");
+        checkCliente = false;
+    
+  }else if($('#selectOne').val() === ''){
+    $('#selectOneHasError').addClass("has-error");
+    }
+
+  else{
+    checkCliente = true;
+    checkSelctOne = true;
     var troco = calculaTroco(valorPago,valorCompra);
     var currentdate = new Date(); 
     var datetime = "Compra realizada em: " + currentdate.getDate() + "/"
@@ -101,11 +119,30 @@ $("#btnConcluiCompra").on("click", function(e) {
     var cliente = document.getElementById('nomeCliente').value;
     var atendente = document.getElementById('selectOne').value;
     criarVendaJSON(dia, mes, ano, cliente, valorCompra, valorPago, troco, atendente);
-
-    alert(datetime);
+    window.location.href='vendasRecentes.html';
 
   }
   
+});
+
+$('#selectOne').change(function() {
+    if($('#selectOne').val() != ''){
+        $('#selectOneHasError').removeClass("has-error");
+        checkSelctOne = true;
+    }else{
+        checkSelctOne = false;
+    }
+});
+
+$('#nomeCliente').change(function(){
+    if($('#nomeCliente').val != ''){
+
+        $('#clienteHasError').removeClass("has-error");
+        checkCliente = true;
+
+    }
+
+
 });
 
 function calculaTroco(valorPago, valorCompra) {
@@ -156,6 +193,5 @@ var venda = {
   atendente: vAtendente
 };
 
-alert(venda.dia);
 
 };
