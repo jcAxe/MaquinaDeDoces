@@ -80,7 +80,24 @@ $("#btnResetPagamento").on("click", function(e) {
 
 });
 
+function checkQtd(){
+  var doce01 = parseInt(document.getElementById('kitkatQtd').value);
+  var doce02 = parseInt(document.getElementById('diamanteNegroQtd').value);
+  var doce03 = parseInt(document.getElementById('suflairQtd').value);
 
+  if((doce01 + doce02 + doce03)===0){
+    alert("Você só poderá comprar um número maior que 0 de doces");
+}else{
+    window.location.href= "compra.html";
+}
+}
+
+
+$(".navbar-brand").on("click", function(e) {
+  localStorage.removeItem("valorCompra");
+  document.getElementById("valorDoces").value = localStorage.removeItem("valorCompra");
+
+});
 
 
 //variaveis globaris para verificar o estado das caixas de entrada
