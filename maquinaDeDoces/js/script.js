@@ -97,9 +97,11 @@ $("#btnConcluiCompra").on("click", function(e) {
   else if($('#nomeCliente').val() === ''){
         $('#clienteHasError').addClass("has-error");
         checkCliente = false;
+        alert("Nome do cliente é obrigatório");
     
   }else if($('#selectOne').val() === ''){
     $('#selectOneHasError').addClass("has-error");
+    alert("A escolha do atendente é obrigatória");
     }
 
   else{

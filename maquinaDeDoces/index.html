@@ -19,7 +19,7 @@
 
   	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-		<div class="container">
+		<div class="container ">
 			<div class="navbar-header">
 
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,8 +41,8 @@
 
 	</div>
 
-  	<div class="container">
-		<div class="jumbotron text-center">
+  	<div class="container galeriaDiv">
+		<div class="jumbotron text-center homeMessage">
 			<h1>Máquina de Doces</h1>
 			<p>Somos um estabelecimento que vende doces por moedas ☺</p>
 		</div>
@@ -51,9 +51,11 @@
 			<p></p>
 		</div>
 
-		<div class="row text-center">
+		<div class="row text-center ">
 			<div class="col-md-4">
+				<div class="imagensDoces">
 					<img src="images/kitkat.png" alt="kitkatPic">
+				</div>
 				<h3>KITKAT</h3>
 				<p>Preço por unidade: R$ 0,80</p>
 				<label for="kitkatLabel">Quantidade : </label><input id="kitkatQtd" class="qtdBox" type="number"  value="0" min="0" autocomplete='off'/>
@@ -61,33 +63,35 @@
 				
 			</div>
 			<div class="col-md-4">
-				
+				<div class="imagensDoces">
 					<img src="images/diamantenegro.png" alt="diamantenegroPic">
-				
+				</div>
 				<h3>Diamante Negro</h3>
 				<p>Preço por unidade: R$ 0,75</p>
 				<label for="diamantNegroLabel">Quantidade : </label><input id="diamanteNegroQtd" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>
 			</div>
 			<div class="col-md-4">
-				
+				<div class="imagensDoces">
 					<img src="images/suflair.png" alt="suflariPic">
-				
+				</div>
 				<h3>Suflair</h3>
 				<p>Preço por unidade: R$ 1,00</p>
 				<label for="suflairLabel">Quantidade : </label><input id="suflairQtd" class="qtdBox" type="number" value="0" min="0" autocomplete='off'/>
 
 
 			</div>
-		</div>
-
-		<div>
+					<div>
 			Total $ <input id="total" class="valorBox" name = "value" type="text"  value="0" min="0" readonly  autocomplete='off'/>
 		</div>
 
+		</div>
 		<div>
 			<button onclick= window.location.href='compra.html' class="button cyan" >Comprar</button>
 
 		</div>
+
+
+
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
