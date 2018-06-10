@@ -1,3 +1,4 @@
+ var valorCompra;
  $('#kitkatQtd').change(function() {
    // alert( $('#kitkatQtd').val() );
      // Capture the entered values of two input boxes
@@ -10,7 +11,7 @@
 
         document.getElementById('total').value = sum.toFixed(2);
         localStorage.setItem("valorCompra", sum.toFixed(2));
-
+        valorCompra = localStorage.getItem("valorCompra");
 });
 
 
@@ -78,6 +79,8 @@ $("#btnResetPagamento").on("click", function(e) {
   $('#pgMoeda100').change();
 
 });
+
+
 
 
 //variaveis globaris para verificar o estado das caixas de entrada

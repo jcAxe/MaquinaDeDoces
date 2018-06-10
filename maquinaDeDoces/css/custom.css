@@ -1,34 +1,10 @@
 body {
-	padding-top: 30px;
-	padding-bottom: 70px;
-	background-color: pink;
-	font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-color: pink;
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
   background-repeat: repeat;
 }
-	
-
-.jumbotron {
-	background-color: pink;
-  -moz-box-shadow:    3px 3px 5px 6px #ff7733;
-  -webkit-box-shadow: 3px 3px 5px 6px #ff7733;
-  box-shadow:         3px 3px 5px 6px #ff7733;
-}
-
-.jumbotron h3 {
-  color:white;
-  text-shadow: 2px 2px black;
-}
-.jumbotron h1 {
-  color:white;
-  text-shadow: 2px 2px black;
-}
-.jumbotron p {
-  color:white;
-  text-shadow: 2px 2px black;
-}
-
-
-
 
 input {
   height: 34px;
@@ -37,79 +13,88 @@ input {
   border: 1px solid transparent;
   border-top: none;
   border-bottom: 1px solid #DDD;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
-
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 }
 
-.qtdBox{
+.jumbotron {
+  background-color: pink;
+  -webkit-box-shadow: 3px 3px 5px 6px #ff7733;
+  box-shadow: 3px 3px 5px 6px #ff7733;
+}
+.jumbotron h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.jumbotron h3 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.jumbotron p {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.input__qtdBox--skin {
   color: black;
-	width: 50px;
+  background-color: pink;
   text-align: center;
+}
+
+.input__qtdBox--structure {
+  width: 50px;
+}
+
+.input__valorBox--skin {
+  color: black;
   background-color: pink;
 }
 
-.valorBox{
-color: black;
-background-color: pink;
-width: 120px;
-margin-top: 10px;
-margin-bottom: 10px;
+.input__valorBox--structure {
+  width: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-.galeriaDiv{
+.div__galeria--skin {
   color: black;
   text-shadow: 2px 2px gold;
   font-family: "Trebuchet MS";
   background-color: white;
   border-radius: 25px;
-  -moz-box-shadow:    1px 1px 3px 2px #ff7733;
   -webkit-box-shadow: 1px 1px 3px 2px #ff7733;
-  box-shadow:         1px 1px 3px 2px #ff7733;
-
+  box-shadow: 1px 1px 3px 2px #ff7733;
 }
-.imagensDoces{
 
+.imagensDocesStructure {
   padding-top: 20px;
 }
 
-
-.has-error{
-	color: #8B0000;
+.has-error {
+  color: #8B0000;
 }
 
-.button.cyan {
-  
+.compra__button--cyan {
   background: #2eabb3;
   border-color: #20797e #1f757a #195d62;
-  background-image: -webkit-linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
-  background-image: -moz-linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
-  background-image: -o-linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3dbdcd), color-stop(50%, #33b2c7), color-stop(50%, #2eabb3), to(#1e9a99));
   background-image: linear-gradient(to bottom, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
 }
 
-.button.cyan:before {
+.compra__button--cyan:before {
   background: #3fccd5;
-  background-image: -webkit-linear-gradient(top, #249299, #4dd3dc);
-  background-image: -moz-linear-gradient(top, #249299, #4dd3dc);
-  background-image: -o-linear-gradient(top, #249299, #4dd3dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#249299), to(#4dd3dc));
   background-image: linear-gradient(to bottom, #249299, #4dd3dc);
 }
 
-.button.cyan:active {
+.compra__button--cyan:active {
   background: #33b9c7;
-  background-image: -webkit-linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
-  background-image: -moz-linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
-  background-image: -o-linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d918f), color-stop(60%, #31b2bf), to(#33b9c7));
   background-image: linear-gradient(to bottom, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
 }
 
-.button.cyan:active:after {
-  border-color: #33b9c7;
+.homeMessageSkin {
+  color: white;
 }
 
-
-.homeMessage{
-
-  color:white;
-}
+/*# sourceMappingURL=custom.css.map */
